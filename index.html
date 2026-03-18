@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bowl Bachchan | Your Go-To Comfort Food Destination</title>
-    <meta name="description" content="Bowl Bachchan is a modern comfort-food restaurant in Dehradun specializing in flavorful rice bowls, quick meals, and late-night cravings. Open 24x7.">
-    
+    <meta name="description"
+        content="Bowl Bachchan is a modern comfort-food restaurant in Dehradun specializing in flavorful rice bowls, quick meals, and late-night cravings. Open 24x7.">
+
     <!-- Google Fonts: Inter and Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Phosphor Icons for modern light icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <header class="navbar" id="navbar">
@@ -29,7 +34,8 @@
             </nav>
             <div class="nav-actions">
                 <a href="tel:08804507529" class="btn btn-outline"><i class="ph ph-phone"></i> Call Now</a>
-                <a href="#menu" class="btn btn-primary"><i class="ph ph-shopping-bag"></i> Order Now</a>
+                <button class="btn btn-primary cart-btn" id="cart-btn"><i class="ph ph-shopping-cart"></i> Cart <span
+                        class="cart-badge" id="cart-badge">0</span></button>
             </div>
             <!-- Mobile Toggle -->
             <button class="mobile-toggle" id="mobile-toggle">
@@ -55,14 +61,17 @@
                 <div class="hero-badge">
                     <i class="ph-fill ph-star"></i> 4.1 Rating | <i class="ph-fill ph-clock"></i> Open 24 Hours
                 </div>
-                <h1 class="hero-title">Craving Something Delicious? <br><span class="highlight">Your Perfect Bowl is Waiting.</span></h1>
-                <p class="hero-subtitle">Freshly prepared rice bowls, rolls & comfort meals — served hot, anytime you want.</p>
+                <h1 class="hero-title">Craving Something Delicious? <br><span class="highlight">Your Perfect Bowl is
+                        Waiting.</span></h1>
+                <p class="hero-subtitle">Freshly prepared rice bowls, rolls & comfort meals — served hot, anytime you
+                    want.</p>
                 <div class="hero-buttons">
                     <a href="#menu" class="btn btn-primary btn-large">Order Now</a>
                     <a href="tel:08804507529" class="btn btn-secondary btn-large">Call Now</a>
                 </div>
                 <div class="hero-trust">
-                    <p><i class="ph ph-check-circle"></i> Dine-in &nbsp;&nbsp; <i class="ph ph-check-circle"></i> Takeaway &nbsp;&nbsp; <i class="ph ph-check-circle"></i> Delivery</p>
+                    <p><i class="ph ph-check-circle"></i> Dine-in &nbsp;&nbsp; <i class="ph ph-check-circle"></i>
+                        Takeaway &nbsp;&nbsp; <i class="ph ph-check-circle"></i> Delivery</p>
                 </div>
             </div>
             <div class="hero-image">
@@ -85,7 +94,8 @@
                         <h3>Paneer Makhani Bowl</h3>
                         <p>Rich, creamy tomato gravy with soft paneer cubes over steamed rice.</p>
                         <div class="card-action">
-                            <button class="btn btn-primary btn-full">Order Now</button>
+                            <button class="btn btn-primary btn-full add-to-cart-btn" data-id="1"
+                                data-name="Paneer Makhani Bowl" data-price="250">Add to Cart - ₹250</button>
                         </div>
                     </div>
                 </div>
@@ -98,18 +108,21 @@
                         <h3>Chicken Tikka Roll</h3>
                         <p>Juicy roasted chicken chunks wrapped in a fresh, flaky paratha.</p>
                         <div class="card-action">
-                            <button class="btn btn-primary btn-full">Order Now</button>
+                            <button class="btn btn-primary btn-full add-to-cart-btn" data-id="2"
+                                data-name="Chicken Tikka Roll" data-price="180">Add to Cart - ₹180</button>
                         </div>
                     </div>
                 </div>
                 <!-- Item 3 -->
                 <div class="menu-card">
-                    <div class="card-img" id="img-chilli" style="background-image: url('assets/chilli-paneer.png');"></div>
+                    <div class="card-img" id="img-chilli" style="background-image: url('assets/chilli-paneer.png');">
+                    </div>
                     <div class="card-content">
                         <h3>Chilli Paneer Combo</h3>
                         <p>Spicy wok-tossed chilli paneer paired with classic vegetable fried rice.</p>
                         <div class="card-action">
-                            <button class="btn btn-primary btn-full">Order Now</button>
+                            <button class="btn btn-primary btn-full add-to-cart-btn" data-id="3"
+                                data-name="Chilli Paneer Combo" data-price="280">Add to Cart - ₹280</button>
                         </div>
                     </div>
                 </div>
@@ -120,7 +133,62 @@
                         <h3>Chocolate Shake</h3>
                         <p>Thick, frosty chocolate milkshake to perfectly balance your meal.</p>
                         <div class="card-action">
-                            <button class="btn btn-primary btn-full">Order Now</button>
+                            <button class="btn btn-primary btn-full add-to-cart-btn" data-id="4"
+                                data-name="Chocolate Shake" data-price="150">Add to Cart - ₹150</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="menu-card">
+                    <div class="card-img" id="img-biryani" style="background-image: url('assets/Chicken-Biryani.jpg');">
+                        <span class="badge best-seller">Best Seller</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chicken Biryani</h3>
+                        <p>Aromatic long grain basmati rice, tender roasted chicken pieces, and raita.</p>
+                        <div class="card-action">
+                            <button class="btn btn-primary btn-full add-to-cart-btn" data-id="5"
+                                data-name="Chicken Biryani" data-price="320">Add to Cart - ₹320</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="menu-card">
+                    <div class="card-img" id="img-spring-rolls"
+                        style="background-image: url('assets/springrolls.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Veg Spring Rolls</h3>
+                        <p>Crispy golden rolls filled with fresh vegetables, served with sweet chilli dip.</p>
+                        <div class="card-action">
+                            <button class="btn btn-primary btn-full add-to-cart-btn" data-id="6"
+                                data-name="Veg Spring Rolls" data-price="140">Add to Cart - ₹140</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 7 -->
+                <div class="menu-card">
+                    <div class="card-img" id="img-mango-lassi" style="background-image: url('assets/mango-lassi.jpg');">
+                    </div>
+                    <div class="card-content">
+                        <h3>Mango Lassi</h3>
+                        <p>Thick, creamy bright yellow Mango Lassi garnished with pistachios.</p>
+                        <div class="card-action">
+                            <button class="btn btn-primary btn-full add-to-cart-btn" data-id="7" data-name="Mango Lassi"
+                                data-price="120">Add to Cart - ₹120</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 8 -->
+                <div class="menu-card">
+                    <div class="card-img" id="img-dal-makhni" style="background-image: url('assets/dal-makhni.jpg');">
+                        <span class="badge popular">Popular</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Dal Makhani Combo</h3>
+                        <p>Rich, creamy black lentil dal alongside buttery garlic naan bread.</p>
+                        <div class="card-action">
+                            <button class="btn btn-primary btn-full add-to-cart-btn" data-id="8"
+                                data-name="Dal Makhani Combo" data-price="260">Add to Cart - ₹260</button>
                         </div>
                     </div>
                 </div>
@@ -164,23 +232,28 @@
             <div class="reviews-grid">
                 <div class="review-card">
                     <div class="stars">
-                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                            class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                     </div>
-                    <p class="review-text">"Best place when I miss homely food or have a midnight craving. Absolutely loved it!"</p>
+                    <p class="review-text">"Best place when I miss homely food or have a midnight craving. Absolutely
+                        loved it!"</p>
                     <p class="review-author">- Rahul S.</p>
                 </div>
                 <div class="review-card">
                     <div class="stars">
-                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                            class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                     </div>
                     <p class="review-text">"Food was very tasty and packaging is excellent. Arrived hot and fresh."</p>
                     <p class="review-author">- Priya M.</p>
                 </div>
                 <div class="review-card">
                     <div class="stars">
-                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star-half"></i>
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                            class="ph-fill ph-star"></i><i class="ph-fill ph-star-half"></i>
                     </div>
-                    <p class="review-text">"Quantity is perfect for one person. Highly recommended for late night studying!"</p>
+                    <p class="review-text">"Quantity is perfect for one person. Highly recommended for late night
+                        studying!"</p>
                     <p class="review-author">- Aman K.</p>
                 </div>
             </div>
@@ -220,11 +293,15 @@
                         <p>₹200–400 per person</p>
                     </div>
                 </div>
-                <a href="https://maps.google.com/?q=254+Salwala+Rd+Hathibarkala+Salwala+Dehradun+Uttarakhand+248001" target="_blank" class="btn btn-outline btn-large mt-4">Get Directions</a>
+                <a href="https://maps.google.com/?q=254+Salwala+Rd+Hathibarkala+Salwala+Dehradun+Uttarakhand+248001"
+                    target="_blank" class="btn btn-outline btn-large mt-4">Get Directions</a>
             </div>
             <div class="contact-map">
                 <!-- Google Maps Embed -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.90382379301!2d78.03780447556391!3d30.325350974783307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092994f31c828d%3A0xc6cb1c9535eb017a!2sSalwala%20Rd%2C%20Hathibarkala%20Salwala%2C%20Dehradun%2C%20Uttarakhand%20248001!5e0!3m2!1sen!2sin!4v1709971092524!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.90382379301!2d78.03780447556391!3d30.325350974783307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092994f31c828d%3A0xc6cb1c9535eb017a!2sSalwala%20Rd%2C%20Hathibarkala%20Salwala%2C%20Dehradun%2C%20Uttarakhand%20248001!5e0!3m2!1sen!2sin!4v1709971092524!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -277,6 +354,27 @@
         <a href="#menu" class="sticky-btn sticky-order"><i class="ph ph-shopping-bag"></i> Order</a>
     </div>
 
+    <!-- Cart Sidebar & Overlay -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Order</h2>
+            <button class="close-cart" id="close-cart"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart Items Injected via JS -->
+            <p class="empty-cart-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">₹0</span>
+            </div>
+            <button class="btn btn-primary btn-full btn-large">Checkout <i class="ph ph-arrow-right"></i></button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
