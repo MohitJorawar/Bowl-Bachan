@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowl Bachchan | Your Go-To Comfort Food Destination</title>
+    <meta name="description" content="Bowl Bachchan is a modern comfort-food restaurant in Dehradun specializing in flavorful rice bowls, quick meals, and late-night cravings. Open 24x7.">
+    
+    <!-- Google Fonts: Inter and Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons for modern light icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Bowl Bachchan</a>
+            <nav class="nav-links">
+                <a href="#menu">Menu</a>
+                <a href="#about">Why Us</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Location</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="tel:08804507529" class="btn btn-outline"><i class="ph ph-phone"></i> Call Now</a>
+                <a href="#menu" class="btn btn-primary"><i class="ph ph-shopping-bag"></i> Order Now</a>
+            </div>
+            <!-- Mobile Toggle -->
+            <button class="mobile-toggle" id="mobile-toggle">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-menu" id="mobile-menu">
+        <nav>
+            <a href="#menu" class="mobile-link">Menu</a>
+            <a href="#about" class="mobile-link">Why Choose Us</a>
+            <a href="#reviews" class="mobile-link">Reviews</a>
+            <a href="#contact" class="mobile-link">Location</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="ph-fill ph-star"></i> 4.1 Rating | <i class="ph-fill ph-clock"></i> Open 24 Hours
+                </div>
+                <h1 class="hero-title">Craving Something Delicious? <br><span class="highlight">Your Perfect Bowl is Waiting.</span></h1>
+                <p class="hero-subtitle">Freshly prepared rice bowls, rolls & comfort meals — served hot, anytime you want.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary btn-large">Order Now</a>
+                    <a href="tel:08804507529" class="btn btn-secondary btn-large">Call Now</a>
+                </div>
+                <div class="hero-trust">
+                    <p><i class="ph ph-check-circle"></i> Dine-in &nbsp;&nbsp; <i class="ph ph-check-circle"></i> Takeaway &nbsp;&nbsp; <i class="ph ph-check-circle"></i> Delivery</p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img id="hero-img" src="assets/hero-bowl.png" alt="Delicious Bowl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Highlights Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Menu Highlights</h2>
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-card">
+                    <div class="card-img" id="img-paneer" style="background-image: url('assets/paneer-bowl.png');">
+                        <span class="badge best-seller">Best Seller</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Paneer Makhani Bowl</h3>
+                        <p>Rich, creamy tomato gravy with soft paneer cubes over steamed rice.</p>
+                        <div class="card-action">
+                            <button class="btn btn-primary btn-full">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="menu-card">
+                    <div class="card-img" id="img-chicken" style="background-image: url('assets/chicken-roll.png');">
+                        <span class="badge popular">Popular</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chicken Tikka Roll</h3>
+                        <p>Juicy roasted chicken chunks wrapped in a fresh, flaky paratha.</p>
+                        <div class="card-action">
+                            <button class="btn btn-primary btn-full">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="menu-card">
+                    <div class="card-img" id="img-chilli" style="background-image: url('assets/chilli-paneer.png');"></div>
+                    <div class="card-content">
+                        <h3>Chilli Paneer Combo</h3>
+                        <p>Spicy wok-tossed chilli paneer paired with classic vegetable fried rice.</p>
+                        <div class="card-action">
+                            <button class="btn btn-primary btn-full">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="menu-card">
+                    <div class="card-img" id="img-shake" style="background-image: url('assets/choco-shake.png');"></div>
+                    <div class="card-content">
+                        <h3>Chocolate Shake</h3>
+                        <p>Thick, frosty chocolate milkshake to perfectly balance your meal.</p>
+                        <div class="card-action">
+                            <button class="btn btn-primary btn-full">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="about section-alt" id="about">
+        <div class="container">
+            <h2 class="section-title text-center">Why Choose Us</h2>
+            <div class="usp-grid">
+                <div class="usp-item">
+                    <div class="usp-icon"><i class="ph ph-cooking-pot"></i></div>
+                    <h3>Homely Taste</h3>
+                    <p>Restaurant quality with the comforting flavors of home-cooked meals.</p>
+                </div>
+                <div class="usp-item">
+                    <div class="usp-icon"><i class="ph ph-clock-countdown"></i></div>
+                    <h3>Open 24x7</h3>
+                    <p>Satisfying your midnight cravings, any day, any time.</p>
+                </div>
+                <div class="usp-item">
+                    <div class="usp-icon"><i class="ph ph-package"></i></div>
+                    <h3>Secure Packaging</h3>
+                    <p>Hygienic, spill-proof packaging ensuring safe and fresh delivery.</p>
+                </div>
+                <div class="usp-item">
+                    <div class="usp-icon"><i class="ph ph-bowl-food"></i></div>
+                    <h3>Generous Portions</h3>
+                    <p>Hearty and filling portions perfectly made for a single person.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="review-text">"Best place when I miss homely food or have a midnight craving. Absolutely loved it!"</p>
+                    <p class="review-author">- Rahul S.</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                    </div>
+                    <p class="review-text">"Food was very tasty and packaging is excellent. Arrived hot and fresh."</p>
+                    <p class="review-author">- Priya M.</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star-half"></i>
+                    </div>
+                    <p class="review-text">"Quantity is perfect for one person. Highly recommended for late night studying!"</p>
+                    <p class="review-author">- Aman K.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section class="contact section-alt" id="contact">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2 class="section-title">Visit Us</h2>
+                <div class="info-group">
+                    <i class="ph ph-map-pin"></i>
+                    <div>
+                        <strong>Address</strong>
+                        <p>254, Salwala Rd, Hathibarkala Salwala,<br>Dehradun, Uttarakhand 248001</p>
+                    </div>
+                </div>
+                <div class="info-group">
+                    <i class="ph ph-phone"></i>
+                    <div>
+                        <strong>Phone</strong>
+                        <p>088045 07529</p>
+                    </div>
+                </div>
+                <div class="info-group">
+                    <i class="ph ph-clock"></i>
+                    <div>
+                        <strong>Hours</strong>
+                        <p>Open 24 Hours</p>
+                    </div>
+                </div>
+                <div class="info-group">
+                    <i class="ph ph-wallet"></i>
+                    <div>
+                        <strong>Cost</strong>
+                        <p>₹200–400 per person</p>
+                    </div>
+                </div>
+                <a href="https://maps.google.com/?q=254+Salwala+Rd+Hathibarkala+Salwala+Dehradun+Uttarakhand+248001" target="_blank" class="btn btn-outline btn-large mt-4">Get Directions</a>
+            </div>
+            <div class="contact-map">
+                <!-- Google Maps Embed -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.90382379301!2d78.03780447556391!3d30.325350974783307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092994f31c828d%3A0xc6cb1c9535eb017a!2sSalwala%20Rd%2C%20Hathibarkala%20Salwala%2C%20Dehradun%2C%20Uttarakhand%20248001!5e0!3m2!1sen!2sin!4v1709971092524!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container text-center">
+            <h2 class="cta-title">Hungry Right Now?</h2>
+            <p class="cta-sub">Your favorite bowl is just one click away.</p>
+            <div class="cta-buttons">
+                <a href="#menu" class="btn btn-primary btn-large">Order Now</a>
+                <a href="tel:08804507529" class="btn btn-secondary btn-large">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>Bowl Bachchan</h3>
+                <p>bol bachchan — less talk, more delicious food.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+                    <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+                    <a href="#"><i class="ph-fill ph-whatsapp-logo"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">Why Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bowl Bachchan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-sticky-cta">
+        <a href="tel:08804507529" class="sticky-btn sticky-call"><i class="ph ph-phone"></i> Call</a>
+        <a href="#menu" class="sticky-btn sticky-order"><i class="ph ph-shopping-bag"></i> Order</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
